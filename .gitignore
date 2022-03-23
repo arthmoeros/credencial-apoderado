@@ -1,0 +1,4 @@
+node_modules
+data/*.jpg
+data/*.csv
+.DS_Store
