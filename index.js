@@ -23,6 +23,7 @@ function generateCredencial(data){
   pdfDoc.text(data.nombres, xpos(65), ypos(20));
   pdfDoc.text(data.apellidos, xpos(65), ypos(36));
   pdfDoc.text(data.curso, xpos(65), ypos(52));
+  pdfDoc.image(`data/${data.index.toString().padStart(2, '0')}.jpg`, xpos(12), ypos(84), {width: 80, height: 80});
   
   pdfDoc.fontSize(12);
   pdfDoc.text(data.nombreApoderado, xpos(65), ypos(205));
